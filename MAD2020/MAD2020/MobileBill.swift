@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Mobile: Bill {
+class MobileBill: Bill {
     var id: String
     var date: Date
     var type: BillType
