@@ -15,6 +15,7 @@
 		AB5F8C6B23F76FBC001064C7 /* CustomStringConvertible+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5F8C6A23F76FBC001064C7 /* CustomStringConvertible+Additions.swift */; };
 		AB5F8C6D23F77263001064C7 /* InternetBill.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5F8C6C23F77263001064C7 /* InternetBill.swift */; };
 		AB5F8C6F23F773D4001064C7 /* HydroBill.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5F8C6E23F773D4001064C7 /* HydroBill.swift */; };
+		AB5F8C7123F77573001064C7 /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5F8C7023F77573001064C7 /* Customer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -39,6 +40,7 @@
 		AB5F8C6A23F76FBC001064C7 /* CustomStringConvertible+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CustomStringConvertible+Additions.swift"; sourceTree = "<group>"; };
 		AB5F8C6C23F77263001064C7 /* InternetBill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetBill.swift; sourceTree = "<group>"; };
 		AB5F8C6E23F773D4001064C7 /* HydroBill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HydroBill.swift; sourceTree = "<group>"; };
+		AB5F8C7023F77573001064C7 /* Customer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 				AB5F8C6A23F76FBC001064C7 /* CustomStringConvertible+Additions.swift */,
 				AB5F8C6C23F77263001064C7 /* InternetBill.swift */,
 				AB5F8C6E23F773D4001064C7 /* HydroBill.swift */,
+				AB5F8C7023F77573001064C7 /* Customer.swift */,
 			);
 			path = MAD2020;
 			sourceTree = "<group>";
@@ -146,6 +149,7 @@
 				AB5F8C6F23F773D4001064C7 /* HydroBill.swift in Sources */,
 				AB5F8C6523F762F9001064C7 /* Bill.swift in Sources */,
 				AB5F8C6723F7643D001064C7 /* BillType.swift in Sources */,
+				AB5F8C7123F77573001064C7 /* Customer.swift in Sources */,
 				AB5F8C5A23F75CE3001064C7 /* main.swift in Sources */,
 				AB5F8C6B23F76FBC001064C7 /* CustomStringConvertible+Additions.swift in Sources */,
 			);
