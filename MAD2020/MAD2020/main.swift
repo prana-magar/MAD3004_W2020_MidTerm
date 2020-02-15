@@ -20,3 +20,8 @@ print(bb)
 
 bb = HydroBill(id: "4", date: Date(), agencyName: "TORONTOH", unitConsumed: 44.9)
 print(bb)
+
+
+var cc = Customer(id: "45", firstName: "Ram", lastName: "rr", email: "sdas@gmail.com")
+
+print(cc)
