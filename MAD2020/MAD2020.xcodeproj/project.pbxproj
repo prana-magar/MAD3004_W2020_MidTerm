@@ -13,6 +13,7 @@
 		AB5F8C6723F7643D001064C7 /* BillType.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5F8C6623F7643D001064C7 /* BillType.swift */; };
 		AB5F8C6923F76BE9001064C7 /* MobileBill.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5F8C6823F76BE9001064C7 /* MobileBill.swift */; };
 		AB5F8C6B23F76FBC001064C7 /* CustomStringConvertible+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5F8C6A23F76FBC001064C7 /* CustomStringConvertible+Additions.swift */; };
+		AB5F8C6D23F77263001064C7 /* InternetBill.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5F8C6C23F77263001064C7 /* InternetBill.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -35,6 +36,7 @@
 		AB5F8C6623F7643D001064C7 /* BillType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillType.swift; sourceTree = "<group>"; };
 		AB5F8C6823F76BE9001064C7 /* MobileBill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileBill.swift; sourceTree = "<group>"; };
 		AB5F8C6A23F76FBC001064C7 /* CustomStringConvertible+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CustomStringConvertible+Additions.swift"; sourceTree = "<group>"; };
+		AB5F8C6C23F77263001064C7 /* InternetBill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetBill.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 				AB5F8C6623F7643D001064C7 /* BillType.swift */,
 				AB5F8C6823F76BE9001064C7 /* MobileBill.swift */,
 				AB5F8C6A23F76FBC001064C7 /* CustomStringConvertible+Additions.swift */,
+				AB5F8C6C23F77263001064C7 /* InternetBill.swift */,
 			);
 			path = MAD2020;
 			sourceTree = "<group>";
@@ -134,6 +137,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB5F8C6D23F77263001064C7 /* InternetBill.swift in Sources */,
 				AB5F8C6923F76BE9001064C7 /* MobileBill.swift in Sources */,
 				AB5F8C6323F762BD001064C7 /* Display.swift in Sources */,
 				AB5F8C6523F762F9001064C7 /* Bill.swift in Sources */,
