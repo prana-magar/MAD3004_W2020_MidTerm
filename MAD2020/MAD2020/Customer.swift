@@ -10,9 +10,35 @@ import Foundation
 
 class Customer: Display, CustomStringConvertible {
     
+    var id: String
+    var firstName: String
+    var lastName: String
+    var fullName: String {
+        get{
+           return "\(firstName) \(lastName)"
+        }
+    }
     
+    var email: String
+    var totalBill: Float {
+        get{
+            return calculateTotalBill()
+        }
+    }
+    
+    
+    init(id: String, firstName: String, lastName: String, email: String) {
+        self.id = id
+        self.firstName = firstName
+        self.lastName = lastName
+        self.email = email
+    }
     
     func display() {
         print(self.description)
+    }
+    
+    func calculateTotalBill() -> Float{
+        return 0
     }
 }
