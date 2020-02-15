@@ -16,7 +16,7 @@ extension CustomStringConvertible {
         
         for child in selfMirror.children {
             if let propertyName = child.label {
-                description += "\(propertyName): \(child.value),\n"
+                description += "\(propertyName): \(child.value)\n"
             }
         }
         

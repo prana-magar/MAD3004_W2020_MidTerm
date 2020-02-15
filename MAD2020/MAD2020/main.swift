@@ -13,3 +13,6 @@ bb = MobileBill(id: "1", date: Date(), type: BillType.Hydro, modelName: "Apple",
 
 
 print(bb)
+
+bb = InternetBill(id: "2", date: Date(), providerName: "Fido", usedGB: 54.33)
+print(bb)
