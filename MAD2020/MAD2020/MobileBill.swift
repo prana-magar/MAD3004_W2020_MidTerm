@@ -12,7 +12,11 @@ class MobileBill: Bill {
     var id: String
     var date: Date
     var type: BillType
-    var total: Float = 0
+    var total: Float {
+        get {
+            return (self.usedGB * 2 + self.usedMinutes * 0.05)
+        }
+    }
     var modelName: String
     var number: Int
     var usedGB: Float
