@@ -8,5 +8,8 @@
 
 import Foundation
 
-print("Hello, World!")
+var bb:Bill
+bb = MobileBill(id: "1", date: Date(), type: BillType.Hydro, modelName: "Apple", number: 123123, usedGB: 5.6, usedMinutes: 56)
 
+
+print(bb)

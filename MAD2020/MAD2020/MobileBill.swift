@@ -30,7 +30,7 @@ class MobileBill: Bill {
     }
     
     func display() {
-        print("Mobile")
+        print(self.description)
     }
     
 

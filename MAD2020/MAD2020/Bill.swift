@@ -8,10 +8,16 @@
 
 import Foundation
 
-protocol Bill: Display{
+protocol Bill: Display , CustomStringConvertible{
     var id: String {get set}
     var date: Date {get set}
     var type: BillType {get set}
     var total: Float {get}
     
+}
+
+extension Bill{
+    func display() {
+        print(self.description)
+    }
 }
