@@ -16,3 +16,7 @@ print(bb)
 
 bb = InternetBill(id: "2", date: Date(), providerName: "Fido", usedGB: 54.33)
 print(bb)
+
+
+bb = HydroBill(id: "4", date: Date(), agencyName: "TORONTOH", unitConsumed: 44.9)
+print(bb)
