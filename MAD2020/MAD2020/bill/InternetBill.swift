@@ -33,14 +33,14 @@ class InternetBill: Bill {
     
     func display(addTab:Bool = false) {
         let printstr = [
-            "*****************",
+            "***************************************",
             "ID: \(self.id)",
             "Date: \(self.date)",
             "Type: \(self.type)",
             "Provider: \(self.provider.name)",
             "Used GB: \(self.usedGB)",
             "Total: \(self.total)",
-            "*****************"
+            "***************************************"
         ]
         
         for str in printstr{

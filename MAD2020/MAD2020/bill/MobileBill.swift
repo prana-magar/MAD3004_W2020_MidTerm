@@ -38,7 +38,7 @@ class MobileBill: Bill {
     func display(addTab:Bool = false) {
         
         let printstr = [
-            "*****************",
+            "***************************************",
             "ID: \(self.id)",
             "Date: \(self.date)",
             "Type: \(self.type)",
@@ -48,7 +48,7 @@ class MobileBill: Bill {
             "Used Min: \(self.usedMinutes)",
             "Model: \(self.modelName)",
             "Total: \(self.total)",
-            "*****************"
+            "***************************************"
         ]
         
         for str in printstr{

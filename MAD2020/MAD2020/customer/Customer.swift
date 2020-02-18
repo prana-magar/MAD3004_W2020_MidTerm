@@ -81,6 +81,7 @@ class Customer: Display, CustomStringConvertible {
     func display(addTab:Bool = false, withBill:Bool = false){
         self.display(addTab: addTab)
         if(withBill){
+            print("-----Bill Information-----")
             for(_,bill) in self.bills{
                 bill.display(addTab: true)
             }

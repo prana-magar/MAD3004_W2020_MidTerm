@@ -31,14 +31,14 @@ class HydroBill: Bill {
     
     func display(addTab:Bool = false) {
         let printstr = [
-            "*****************",
+            "***************************************",
             "ID: \(self.id)",
             "Date: \(self.date)",
             "Type: \(self.type)",
             "Agency: \(self.agency.name)",
             "Units: \(self.unitConsumed)",
             "Total: \(self.total)",
-            "*****************"
+            "***************************************"
         ]
         
         for str in printstr{
