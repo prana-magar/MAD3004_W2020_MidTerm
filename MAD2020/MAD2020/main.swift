@@ -160,29 +160,53 @@ for customer in customers{
     customer.display(withBill: true)
 }
 
+
+// Finding customers with customer id
+print("\n\n Trying to find customer with customer id c1")
+if let cc = getCustomerById(id: "C1"){
+    print("Found customer with given id:")
+    cc.display()
+}
+
+print("\n\n Trying to find customer with customer id C2")
+if let cc = getCustomerById(id: "C2"){
+    print("Found customer with given id along with bill details")
+    cc.display(withBill: true)
+}
+
+
+print("\n\n Trying to find customer with customer id c9")
+if let cc = getCustomerById(id: "c9"){
+    print("Found customer with given id:")
+    cc.display()
+}
+
+
 // searching bill in Shyam customer
 
 // bill not found
 var billId = "bell_3"
+print("\n\nTrying to find bill with id: \(billId) in customer with id: C2")
 if let c = getCustomerById(id: "C2"){
     if c[billId] != nil {
-        print("\n\nbill found with id \(billId) for customer \(c.id) : ")
+        print("bill found with id \(billId) for customer \(c.id) : ")
         c[billId]!.display()
     }
     else {
-        print("\n\nNo bill found with id \(billId) for customer \(c.id)")
+        print("No bill found with id \(billId) for customer \(c.id)")
     }
 }
 
 // if bill exists
 billId = "bell_1"
+print("\n\nTrying to find bill with id: \(billId) in customer with id: C2")
 if let c = getCustomerById(id: "C2"){
     if c[billId] != nil {
-        print("\n\nbill found with id \(billId) for customer \(c.id) : ")
+        print("bill found with id \(billId) for customer \(c.id) : ")
         c[billId]!.display()
     }
     else {
-        print("\n\nNo bill found with id \(billId) for customer \(c.id)")
+        print("No bill found with id \(billId) for customer \(c.id)")
     }
 }
 

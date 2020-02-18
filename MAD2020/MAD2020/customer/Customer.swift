@@ -77,9 +77,6 @@ class Customer: Display, CustomStringConvertible {
         self.number = number
     }
     
-    func display() {
-        print(self.description)
-    }
     
     func calculateTotalBill() -> Float{
         var total = Float(0.0)
