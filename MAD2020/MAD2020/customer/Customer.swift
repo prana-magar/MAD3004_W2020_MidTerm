@@ -109,6 +109,15 @@ class Customer: Display, CustomStringConvertible {
         return nil
     }
     
+    func removeBill(id: String){
+        if(bills.keys.contains(id)){
+            bills.removeValue(forKey: id)
+        }
+        else{
+            print("No bill with id \(id) found")
+        }
+    }
+    
     subscript(id: String) -> Bill?{
         get{
             return findBillById(id: id)
