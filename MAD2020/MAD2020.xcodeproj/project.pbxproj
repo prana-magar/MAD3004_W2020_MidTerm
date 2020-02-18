@@ -19,6 +19,7 @@
 		ABC75D5923FB7D2100C6D9B6 /* CellPhoneProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC75D5823FB7D2100C6D9B6 /* CellPhoneProvider.swift */; };
 		ABC75D5B23FC3AEC00C6D9B6 /* InternetProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC75D5A23FC3AEC00C6D9B6 /* InternetProvider.swift */; };
 		ABC75D5D23FC3B4C00C6D9B6 /* HydroProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC75D5C23FC3B4C00C6D9B6 /* HydroProvider.swift */; };
+		ABC75D5F23FC5E3700C6D9B6 /* Float+UnitFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC75D5E23FC5E3700C6D9B6 /* Float+UnitFormat.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -47,6 +48,7 @@
 		ABC75D5823FB7D2100C6D9B6 /* CellPhoneProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellPhoneProvider.swift; sourceTree = "<group>"; };
 		ABC75D5A23FC3AEC00C6D9B6 /* InternetProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetProvider.swift; sourceTree = "<group>"; };
 		ABC75D5C23FC3B4C00C6D9B6 /* HydroProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HydroProvider.swift; sourceTree = "<group>"; };
+		ABC75D5E23FC5E3700C6D9B6 /* Float+UnitFormat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Float+UnitFormat.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				AB5F8C6A23F76FBC001064C7 /* CustomStringConvertible+Additions.swift */,
+				ABC75D5E23FC5E3700C6D9B6 /* Float+UnitFormat.swift */,
 			);
 			path = extension;
 			sourceTree = "<group>";
@@ -192,6 +195,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABC75D5F23FC5E3700C6D9B6 /* Float+UnitFormat.swift in Sources */,
 				AB5F8C6D23F77263001064C7 /* InternetBill.swift in Sources */,
 				AB5F8C6923F76BE9001064C7 /* MobileBill.swift in Sources */,
 				AB5F8C6323F762BD001064C7 /* Display.swift in Sources */,
