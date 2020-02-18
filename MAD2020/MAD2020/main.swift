@@ -253,6 +253,12 @@ if(illegalCustomerObject == nil){
     print("Customer object not allowed with invalid Phone number")
 }
 
-
+// customers sorted by total bill
+customers.sort { (c1, c2) -> Bool in
+    return c1.totalBill > c2.totalBill
+}
+for customer in customers{
+    customer.display()
+}
 
 
