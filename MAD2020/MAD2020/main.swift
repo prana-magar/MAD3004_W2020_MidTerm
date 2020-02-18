@@ -42,4 +42,35 @@ var justEnergyHydroProvider = HydroProvider(name: "Just Energy",
 
 
 
+// For customer 1
+// Mobile bill 1
+var mobileBill1 = MobileBill(id: "fido_1",
+                             date: Date(),
+                             modelName: "Samsung s9",
+                             number: 289456789,
+                             usedGB: 4.6,
+                             usedMinutes: 35.4,
+                             provider: fidoPhoneProvider)
+// Hydro bill 1
+var hydroBill1 = HydroBill(id: "justenergy_1",
+                           date: Date(),
+                           agency: justEnergyHydroProvider,
+                           unitConsumed: 45.3)
+
+// customer 1
+var ramCustomer = Customer(id: "ram_123",
+                           firstName: "Ram",
+                           lastName: "katel",
+                           email: "ram@gmail.com")
+
+// Adding one bill at a time
+ramCustomer.addBill(bill: mobileBill1)
+ramCustomer.addBill(bill: hydroBill1)
+
+
+
+
+
+
+
 
