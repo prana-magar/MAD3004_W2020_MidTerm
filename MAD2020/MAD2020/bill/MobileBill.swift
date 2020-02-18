@@ -11,7 +11,8 @@ import Foundation
 class MobileBill: Bill {
     var id: String
     var date: Date
-    var type: BillType
+    var type: BillType = BillType.Mobile
+    var provider: CellPhoneProvider
     var total: Float {
         get {
             return (self.usedGB * 2 + self.usedMinutes * 0.05)
@@ -22,15 +23,14 @@ class MobileBill: Bill {
     var usedGB: Float
     var usedMinutes: Float
     
-    init(id: String, date: Date, type: BillType, modelName: String, number: Int, usedGB: Float, usedMinutes: Float) {
+    init(id: String, date: Date, modelName: String, number: Int, usedGB: Float, usedMinutes: Float, provider: CellPhoneProvider) {
         self.id = id
         self.date = date
-        self.type = type
         self.modelName = modelName
         self.number = number
         self.usedGB = usedGB
         self.usedMinutes = usedMinutes
-        
+        self.provider = provider
     }
     
     func display() {
