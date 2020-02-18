@@ -1,8 +1,8 @@
 //
-//  Float+PriceFormat.swift
+//  Float+Extensions.swift
 //  MAD2020
 //
-//  Created by Prakash on 18/02/20.
+//  Created by Prakash on 2020-02-18.
 //  Copyright © 2020 com.lambton. All rights reserved.
 //
 
@@ -16,5 +16,23 @@ extension Float{
             return formattedPrice
         }
         return ""
+    }
+    
+    func unitFormat() -> String{
+        if self < 2 {
+            return "\(self) unit"
+        }
+        else{
+            return "\(self) units"
+        }
+        
+    }
+    
+    func dataUsageFormat() -> String{
+        return "\(self) GB"
+    }
+    
+    func minUsageFormat() -> String{
+        return "\(self) Minutes"
     }
 }
