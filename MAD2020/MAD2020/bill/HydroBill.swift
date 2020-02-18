@@ -12,7 +12,12 @@ class HydroBill: Bill {
     var id: String
     var date: Date
     var type: BillType = BillType.Hydro
-    var total: Float = 0
+    var total: Float {
+        get {
+            return self.agency.calculateTotalBill(
+                unitConsumed: self.unitConsumed)
+        }
+    }
     var agency: HydroProvider
     var unitConsumed: Float
     
