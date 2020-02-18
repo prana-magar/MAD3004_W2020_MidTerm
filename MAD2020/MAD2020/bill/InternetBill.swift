@@ -12,9 +12,17 @@ class InternetBill: Bill {
     var id: String
     var date: Date
     var type: BillType = BillType.Internet
-    var total: Float = 0
     var provider: InternetProvider
     var usedGB: Float
+    var total: Float {
+        get {
+            return self.provider.calculateTotalBill(
+                gbUsed: self.usedGB
+            )
+        }
+        
+    }
+    
     
     init(id: String, date: Date, provider: InternetProvider, usedGB: Float) {
         self.id = id
@@ -23,9 +31,4 @@ class InternetBill: Bill {
         self.usedGB = usedGB
     }
 
-    func calculateTotal() -> Float {
-        return self.usedGB
-    }
-    
-    
 }
