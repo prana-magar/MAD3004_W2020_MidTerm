@@ -35,18 +35,28 @@ class MobileBill: Bill {
         self.provider = provider
     }
     
-    func display() {
-        print("*****************")
-        print("ID: \(self.id)")
-        print("Date: \(self.date)")
-        print("Type: \(self.type)")
-        print("Number: \(self.number)")
-        print("Provider: \(self.provider.name)")
-        print("Used GB: \(self.usedGB)")
-        print("Used Min: \(self.usedMinutes)")
-        print("Model: \(self.modelName)")
-        print("Total: \(self.total)")
-        print("*****************")
+    func display(addTab:Bool = true) {
+        
+        let printstr = [
+            "*****************",
+            "ID: \(self.id)",
+            "Date: \(self.date)",
+            "Type: \(self.type)",
+            "Number: \(self.number)",
+            "Provider: \(self.provider.name)",
+            "Used GB: \(self.usedGB)",
+            "Used Min: \(self.usedMinutes)",
+            "Model: \(self.modelName)",
+            "Total: \(self.total)",
+            "*****************"
+        ]
+        
+        for str in printstr{
+            if addTab{ print("\t", terminator:"")}
+            print(str)
+        }
+        
+        
     }
 
     
