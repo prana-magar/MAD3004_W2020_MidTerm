@@ -23,7 +23,7 @@ extension Bill{
             "ID: \(self.id)",
             "Date: \(self.date)",
             "Type: \(self.type)",
-            "Total: \(self.total)",
+            "Total: \(self.total.priceFormat())",
             "***************************************"
         ]
         

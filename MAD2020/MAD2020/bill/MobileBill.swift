@@ -47,7 +47,7 @@ class MobileBill: Bill {
             "Used GB: \(self.usedGB)",
             "Used Min: \(self.usedMinutes)",
             "Model: \(self.modelName)",
-            "Total: \(self.total)",
+            "Total: \(self.total.priceFormat())",
             "***************************************"
         ]
         
