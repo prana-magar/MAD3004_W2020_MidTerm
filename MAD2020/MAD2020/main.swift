@@ -123,7 +123,15 @@ hariCustomer.addBill(bill: mobileBill3)
 var customers = [ramCustomer, shyamCustomer, hariCustomer]
 
 
-
+func getCustomerById(id: String) -> Customer? {
+    for customer in customers{
+        if(id == customer.id){
+            return customer
+        }
+    }
+    print("Customer with id \(id) not Found.")
+    return nil
+}
 
 
 
