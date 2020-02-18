@@ -9,7 +9,6 @@
 import Foundation
 
 class Customer: Display, CustomStringConvertible {
-    
     var id: String
     var firstName: String
     var lastName: String
@@ -42,4 +41,19 @@ class Customer: Display, CustomStringConvertible {
     func calculateTotalBill() -> Float{
         return 0
     }
+    
+    func addBill(bill: Bill){
+        let billID: String = bill.id
+        if self.bills.keys.contains(billID){
+            print("Bill with bill ID:\(billID) is already present. Updating with new value")
+        }
+        self.bills.updateValue(bill, forKey: billID)
+    }
+    
+    func addBills(bills: [Bill]) {
+        for bill in bills{
+            self.addBill(bill: bill)
+        }
+    }
+    
 }
