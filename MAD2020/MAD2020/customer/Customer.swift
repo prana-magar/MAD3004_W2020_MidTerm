@@ -39,7 +39,11 @@ class Customer: Display, CustomStringConvertible {
     }
     
     func calculateTotalBill() -> Float{
-        return 0
+        var total = Float(0.0)
+        for(_, bill) in self.bills{
+            total += bill.total
+        }
+        return total
     }
     
     func addBill(bill: Bill){
