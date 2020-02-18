@@ -64,7 +64,8 @@ var ramCustomer: Customer
 if let ramCustomer = Customer(id: "C1",
                        firstName: "Ram",
                        lastName: "katel",
-                       email: "ram@gmail.com"){
+                       email: "ram@gmail.com",
+                       number: "12312312"){
     // Adding one bill at a time
     ramCustomer.addBill(bill: mobileBill1)
     ramCustomer.addBill(bill: hydroBill1)
@@ -101,7 +102,8 @@ var hydroBill2:Bill = HydroBill(id: "justenergy_2",
 if let shyamCustomer =  Customer(id: "C2",
                              firstName: "Shyam",
                              lastName: "pokhrel",
-                             email: "shyam@fertl.com")
+                             email: "shyam@fertl.com",
+                             number: "12345678")
 {
     let shyamBills = [mobileBill2, internetBill2, hydroBill2]
     // Adding all bills at once
@@ -130,7 +132,8 @@ var mobileBill3 = MobileBill(id: "freedom_1",
 if let hariCustomer = Customer(id: "C3",
                         firstName: "Hari",
                         lastName: "ger",
-                        email: "haribari@gert.com")
+                        email: "haribari@gert.com",
+                        number: "232423111")
 {
     hariCustomer.addBill(bill: mobileBill3)
     customers.append(hariCustomer)
@@ -157,7 +160,55 @@ for customer in customers{
     customer.display(withBill: true)
 }
 
+// searching bill in Shyam customer
 
+// bill not found
+var billId = "bell_3"
+if let c = getCustomerById(id: "C2"){
+    if c[billId] != nil {
+        print("\n\nbill found with id \(billId) for customer \(c.id) : ")
+        c[billId]!.display()
+    }
+    else {
+        print("\n\nNo bill found with id \(billId) for customer \(c.id)")
+    }
+}
+
+// if bill exists
+billId = "bell_1"
+if let c = getCustomerById(id: "C2"){
+    if c[billId] != nil {
+        print("\n\nbill found with id \(billId) for customer \(c.id) : ")
+        c[billId]!.display()
+    }
+    else {
+        print("\n\nNo bill found with id \(billId) for customer \(c.id)")
+    }
+}
+
+
+// Doesnt allow to create object if email is not valid
+
+print("\n\nTrying to create cusomer with illegal email")
+var illegalCustomerObject = Customer(id: "C2",
+                                     firstName: "Shyam",
+                                     lastName: "pokhrel",
+                                     email: "fertl.com",
+                                     number: "12345678")
+if(illegalCustomerObject == nil){
+    print("Customer object not allowed with invalid email")
+}
+
+// Doesnt allow to create Customer object if phone number is invalid
+print("\n\nTrying to create cusomer with illegal Phone number")
+var illegalCustomerObject2 = Customer(id: "C2",
+                                     firstName: "Shyam",
+                                     lastName: "pokhrel",
+                                     email: "fert@l.com",
+                                     number: "12")
+if(illegalCustomerObject == nil){
+    print("Customer object not allowed with invalid Phone number")
+}
 
 
 

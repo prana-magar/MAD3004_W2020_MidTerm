@@ -12,6 +12,7 @@ class Customer: Display, CustomStringConvertible {
     var id: String
     var firstName: String
     var lastName: String
+    var number: String
     lazy var bills: [String: Bill] = [String: Bill]()
     var fullName: String {
         get{
@@ -27,7 +28,9 @@ class Customer: Display, CustomStringConvertible {
     }
     
     
-    init?(id: String, firstName: String, lastName: String, email: String){
+    init?(id: String, firstName: String, lastName: String, email: String, number: String){
+        
+        // Email validations
         do{
             try Validations.email(email: email)
         }
@@ -37,18 +40,41 @@ class Customer: Display, CustomStringConvertible {
         }
         catch EmailValidationError.isEmpty{
             print("Email passed is Empty.")
+            return nil
         }
         catch EmailValidationError.isNotValidLength{
             print("Email not valid length")
+            return nil
         }
         catch {
             print("Unknow Error \(error)")
+            return nil
+        }
+        
+        
+        // Number validations
+        do{
+            try Validations.mobileNumber(number: number)
+        }
+        catch PhoneNumberValidationError.voiletsMinLength {
+            print("Phone number less than length of 7")
+            return nil
+        }
+        catch PhoneNumberValidationError.voiletsMaxLength{
+            print("Phone number more than length of 16")
+            return nil
+        }
+        catch {
+            print("Unknow erroe occure in phone validation \(error)")
+            return nil
+            
         }
         
         self.id = id
         self.firstName = firstName
         self.lastName = lastName
         self.email = email
+        self.number = number
     }
     
     func display() {
@@ -77,15 +103,29 @@ class Customer: Display, CustomStringConvertible {
         }
     }
     
+    func findBillById(id: String) -> Bill?{
+        for (_, bill) in bills{
+            if bill.id == id{
+                return bill
+            }
+        }
+        return nil
+    }
+    
+    subscript(id: String) -> Bill?{
+        get{
+            return findBillById(id: id)
+        }
+    }
+    
     func display(addTab:Bool = false) {
         
         let printstr = [
             "\n*****************",
             "ID: \(self.id)",
-            "First Name: \(self.firstName)",
-            "Last Name: \(self.lastName)",
+            "Full Name: \(self.fullName)",
             "email: \(self.email)",
-            "Total: \(self.totalBill)",
+            "Total: \(self.totalBill.priceFormat())",
             "*****************"
         ]
         
