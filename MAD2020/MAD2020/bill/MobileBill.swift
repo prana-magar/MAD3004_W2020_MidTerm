@@ -15,7 +15,9 @@ class MobileBill: Bill {
     var provider: CellPhoneProvider
     var total: Float {
         get {
-            return (self.usedGB * 2 + self.usedMinutes * 0.05)
+            return self.provider.calculateTotalBill(
+                gbUsed: self.usedGB,
+                minuteUsed: self.usedMinutes )
         }
     }
     var modelName: String
