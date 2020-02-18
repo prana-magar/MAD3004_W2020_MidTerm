@@ -36,7 +36,7 @@ class HydroBill: Bill {
             "Date: \(self.date)",
             "Type: \(self.type)",
             "Agency: \(self.agency.name)",
-            "Units: \(self.unitConsumed)",
+            "Units: \(self.unitConsumed.unitFormat())",
             "Total: \(self.total)",
             "***************************************"
         ]
