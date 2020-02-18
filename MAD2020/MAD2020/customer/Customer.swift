@@ -10,17 +10,17 @@ import Foundation
 
 class Customer: Display, CustomStringConvertible {
     var id: String
-    var firstName: String
-    var lastName: String
-    var number: String
-    lazy var bills: [String: Bill] = [String: Bill]()
+    private var firstName: String
+    private var lastName: String
+    private var number: String
+    private lazy var bills: [String: Bill] = [String: Bill]()
     var fullName: String {
         get{
            return "\(firstName) \(lastName)"
         }
     }
     
-    var email: String
+    private var email: String
     var totalBill: Float {
         get{
             return calculateTotalBill()
