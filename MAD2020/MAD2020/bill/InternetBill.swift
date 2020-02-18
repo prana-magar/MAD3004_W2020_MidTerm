@@ -23,5 +23,9 @@ class InternetBill: Bill {
         self.usedGB = usedGB
     }
 
+    func calculateTotal() -> Float {
+        return self.usedGB
+    }
+    
     
 }
