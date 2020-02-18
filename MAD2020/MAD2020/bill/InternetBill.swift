@@ -31,15 +31,22 @@ class InternetBill: Bill {
         self.usedGB = usedGB
     }
     
-    func display() {
-        print("*****************")
-        print("ID: \(self.id)")
-        print("Date: \(self.date)")
-        print("Type: \(self.type)")
-        print("Provider: \(self.provider.name)")
-        print("Used GB: \(self.usedGB)")
-        print("Total: \(self.total)")
-        print("*****************")
+    func display(addTab:Bool = false) {
+        let printstr = [
+            "*****************",
+            "ID: \(self.id)",
+            "Date: \(self.date)",
+            "Type: \(self.type)",
+            "Provider: \(self.provider.name)",
+            "Used GB: \(self.usedGB)",
+            "Total: \(self.total)",
+            "*****************"
+        ]
+        
+        for str in printstr{
+            if addTab{ print("\t", terminator:"")}
+            print(str)
+        }
     }
 
 }
