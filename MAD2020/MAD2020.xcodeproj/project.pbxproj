@@ -23,6 +23,7 @@
 		ABC75D6123FC612300C6D9B6 /* Float+PriceFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC75D6023FC612300C6D9B6 /* Float+PriceFormat.swift */; };
 		ABC75D6323FC63B000C6D9B6 /* Float+DataUsageFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC75D6223FC63B000C6D9B6 /* Float+DataUsageFormat.swift */; };
 		ABC75D6523FC739500C6D9B6 /* Date+Format.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC75D6423FC739500C6D9B6 /* Date+Format.swift */; };
+		ABC75D6723FC782C00C6D9B6 /* Validations.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC75D6623FC782C00C6D9B6 /* Validations.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -55,6 +56,7 @@
 		ABC75D6023FC612300C6D9B6 /* Float+PriceFormat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Float+PriceFormat.swift"; sourceTree = "<group>"; };
 		ABC75D6223FC63B000C6D9B6 /* Float+DataUsageFormat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Float+DataUsageFormat.swift"; sourceTree = "<group>"; };
 		ABC75D6423FC739500C6D9B6 /* Date+Format.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Format.swift"; sourceTree = "<group>"; };
+		ABC75D6623FC782C00C6D9B6 /* Validations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validations.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				AB5F8C6223F762BD001064C7 /* Display.swift */,
+				ABC75D6623FC782C00C6D9B6 /* Validations.swift */,
 			);
 			path = util;
 			sourceTree = "<group>";
@@ -209,6 +212,7 @@
 				AB5F8C6D23F77263001064C7 /* InternetBill.swift in Sources */,
 				AB5F8C6923F76BE9001064C7 /* MobileBill.swift in Sources */,
 				AB5F8C6323F762BD001064C7 /* Display.swift in Sources */,
+				ABC75D6723FC782C00C6D9B6 /* Validations.swift in Sources */,
 				AB5F8C6F23F773D4001064C7 /* HydroBill.swift in Sources */,
 				AB5F8C6523F762F9001064C7 /* Bill.swift in Sources */,
 				AB5F8C6723F7643D001064C7 /* BillType.swift in Sources */,
