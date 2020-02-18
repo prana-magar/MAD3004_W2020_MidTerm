@@ -44,8 +44,19 @@ var justEnergyHydroProvider = HydroProvider(name: "Just Energy",
 
 // For customer 1
 // Mobile bill 1
+
+
+// Specify date components
+var dateComponents = DateComponents()
+dateComponents.year = 2019
+dateComponents.month = 7
+dateComponents.day = 11
+
+// Create date from components
+let userCalendar = Calendar.current
+let date1 = userCalendar.date(from: dateComponents)
 var mobileBill1 = MobileBill(id: "fido_1",
-                             date: Date(),
+                             date: date1!,
                              modelName: "Samsung s9",
                              number: "289456789",
                              usedGB: 4.6,
@@ -54,7 +65,7 @@ var mobileBill1 = MobileBill(id: "fido_1",
 
 // Hydro bill 1
 var hydroBill1 = HydroBill(id: "justenergy_1",
-                           date: Date(),
+                           date: date1!.addingTimeInterval(1231232312),
                            agency: justEnergyHydroProvider,
                            unitConsumed: 45.3)
 
