@@ -58,7 +58,7 @@ var hydroBill1 = HydroBill(id: "justenergy_1",
                            unitConsumed: 45.3)
 
 // customer 1
-var ramCustomer = Customer(id: "ram_123",
+var ramCustomer = Customer(id: "C1",
                            firstName: "Ram",
                            lastName: "katel",
                            email: "ram@gmail.com")
@@ -66,8 +66,61 @@ var ramCustomer = Customer(id: "ram_123",
 // Adding one bill at a time
 ramCustomer.addBill(bill: mobileBill1)
 ramCustomer.addBill(bill: hydroBill1)
+print(ramCustomer)
 
 
+// For customer 2
+
+var mobileBill2:Bill = MobileBill(id: "publicMobile_1",
+                             date: Date(),
+                             modelName: "iphone X",
+                             number: 289445678,
+                             usedGB: 5.9,
+                             usedMinutes: 55.3,
+                             provider: publicMobilePhoneProvider)
+
+var internetBill2:Bill = InternetBill(id: "bell_1",
+                                 date: Date(),
+                                 provider: bellInternetProvider,
+                                 usedGB: 67.8)
+
+var hydroBill2:Bill = HydroBill(id: "justenergy_2",
+                           date: Date(),
+                           agency: justEnergyHydroProvider,
+                           unitConsumed: 55.3)
+
+var shyamCustomer = Customer(id: "C2",
+                             firstName: "Shyam",
+                             lastName: "pokhrel",
+                             email: "shyam@fertl.com")
+
+var shyamBills = [mobileBill2, internetBill2, hydroBill2]
+
+// Adding all bills at once
+shyamCustomer.addBill(bills: shyamBills)
+
+
+
+
+// For customer 3
+
+var mobileBill3 = MobileBill(id: "freedom_1",
+                             date: Date(),
+                             modelName: "Iphone 11",
+                             number: 456457534,
+                             usedGB: 3.3,
+                             usedMinutes: 42,
+                             provider: freedomMobilePhoneProvider)
+
+var hariCustomer = Customer(id: "C3",
+                            firstName: "Hari",
+                            lastName: "ger",
+                            email: "haribari@gert.com")
+
+hariCustomer.addBill(bill: mobileBill3)
+
+
+var customers = [ramCustomer, shyamCustomer, hariCustomer]
 
 
 

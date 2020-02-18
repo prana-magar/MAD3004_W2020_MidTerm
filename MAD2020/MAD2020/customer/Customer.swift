@@ -50,7 +50,7 @@ class Customer: Display, CustomStringConvertible {
         self.bills.updateValue(bill, forKey: billID)
     }
     
-    func addBills(bills: [Bill]) {
+    func addBill(bills: [Bill]) {
         for bill in bills{
             self.addBill(bill: bill)
         }
