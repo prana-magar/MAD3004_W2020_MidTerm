@@ -8,6 +8,7 @@
 
 import Foundation
 
+
 class HydroBill: Bill {
     var id: String
     var date: Date
