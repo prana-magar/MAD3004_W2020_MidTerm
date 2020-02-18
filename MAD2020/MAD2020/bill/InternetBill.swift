@@ -38,7 +38,7 @@ class InternetBill: Bill {
             "Date: \(self.date)",
             "Type: \(self.type)",
             "Provider: \(self.provider.name)",
-            "Used GB: \(self.usedGB)",
+            "Used GB: \(self.usedGB.dataUsageFormat())",
             "Total: \(self.total.priceFormat())",
             "***************************************"
         ]
