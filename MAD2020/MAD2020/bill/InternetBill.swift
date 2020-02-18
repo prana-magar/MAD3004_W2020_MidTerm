@@ -13,13 +13,13 @@ class InternetBill: Bill {
     var date: Date
     var type: BillType = BillType.Internet
     var total: Float = 0
-    var providerName: String
+    var provider: InternetProvider
     var usedGB: Float
     
-    init(id: String, date: Date, providerName: String, usedGB: Float) {
+    init(id: String, date: Date, provider: InternetProvider, usedGB: Float) {
         self.id = id
         self.date = date
-        self.providerName = providerName
+        self.provider = provider
         self.usedGB = usedGB
     }
 
