@@ -30,5 +30,16 @@ class InternetBill: Bill {
         self.provider = provider
         self.usedGB = usedGB
     }
+    
+    func display() {
+        print("*****************")
+        print("ID: \(self.id)")
+        print("Date: \(self.date)")
+        print("Type: \(self.type)")
+        print("Provider: \(self.provider.name)")
+        print("Used GB: \(self.usedGB)")
+        print("Total: \(self.total)")
+        print("*****************")
+    }
 
 }

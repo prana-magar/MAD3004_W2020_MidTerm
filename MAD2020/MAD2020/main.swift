@@ -51,6 +51,7 @@ var mobileBill1 = MobileBill(id: "fido_1",
                              usedGB: 4.6,
                              usedMinutes: 35.4,
                              provider: fidoPhoneProvider)
+mobileBill1.display()
 // Hydro bill 1
 var hydroBill1 = HydroBill(id: "justenergy_1",
                            date: Date(),
@@ -66,7 +67,7 @@ var ramCustomer = Customer(id: "C1",
 // Adding one bill at a time
 ramCustomer.addBill(bill: mobileBill1)
 ramCustomer.addBill(bill: hydroBill1)
-print(ramCustomer)
+
 
 
 // For customer 2
@@ -132,6 +133,8 @@ func getCustomerById(id: String) -> Customer? {
     print("Customer with id \(id) not Found.")
     return nil
 }
+
+
 
 
 

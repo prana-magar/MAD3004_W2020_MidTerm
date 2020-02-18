@@ -36,8 +36,19 @@ class MobileBill: Bill {
     }
     
     func display() {
-        print(self.description)
+        print("*****************")
+        print("ID: \(self.id)")
+        print("Date: \(self.date)")
+        print("Type: \(self.type)")
+        print("Number: \(self.number)")
+        print("Provider: \(self.provider.name)")
+        print("Used GB: \(self.usedGB)")
+        print("Used Min: \(self.usedMinutes)")
+        print("Model: \(self.modelName)")
+        print("Total: \(self.total)")
+        print("*****************")
     }
+
     
 
 }
