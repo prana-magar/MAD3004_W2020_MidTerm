@@ -35,7 +35,7 @@ class MobileBill: Bill {
         self.provider = provider
     }
     
-    func display(addTab:Bool = true) {
+    func display(addTab:Bool = false) {
         
         let printstr = [
             "*****************",
