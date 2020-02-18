@@ -134,7 +134,7 @@ func getCustomerById(id: String) -> Customer? {
     return nil
 }
 
-ramCustomer.display(withBill: true)
+shyamCustomer.display(withBill: true)
 
 
 

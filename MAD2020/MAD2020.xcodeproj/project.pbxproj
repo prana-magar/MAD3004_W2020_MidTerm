@@ -21,6 +21,7 @@
 		ABC75D5D23FC3B4C00C6D9B6 /* HydroProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC75D5C23FC3B4C00C6D9B6 /* HydroProvider.swift */; };
 		ABC75D5F23FC5E3700C6D9B6 /* Float+UnitFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC75D5E23FC5E3700C6D9B6 /* Float+UnitFormat.swift */; };
 		ABC75D6123FC612300C6D9B6 /* Float+PriceFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC75D6023FC612300C6D9B6 /* Float+PriceFormat.swift */; };
+		ABC75D6323FC63B000C6D9B6 /* Float+DataUsageFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC75D6223FC63B000C6D9B6 /* Float+DataUsageFormat.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -51,6 +52,7 @@
 		ABC75D5C23FC3B4C00C6D9B6 /* HydroProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HydroProvider.swift; sourceTree = "<group>"; };
 		ABC75D5E23FC5E3700C6D9B6 /* Float+UnitFormat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Float+UnitFormat.swift"; sourceTree = "<group>"; };
 		ABC75D6023FC612300C6D9B6 /* Float+PriceFormat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Float+PriceFormat.swift"; sourceTree = "<group>"; };
+		ABC75D6223FC63B000C6D9B6 /* Float+DataUsageFormat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Float+DataUsageFormat.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 				AB5F8C6A23F76FBC001064C7 /* CustomStringConvertible+Additions.swift */,
 				ABC75D5E23FC5E3700C6D9B6 /* Float+UnitFormat.swift */,
 				ABC75D6023FC612300C6D9B6 /* Float+PriceFormat.swift */,
+				ABC75D6223FC63B000C6D9B6 /* Float+DataUsageFormat.swift */,
 			);
 			path = extension;
 			sourceTree = "<group>";
@@ -212,6 +215,7 @@
 				ABC75D5923FB7D2100C6D9B6 /* CellPhoneProvider.swift in Sources */,
 				AB5F8C6B23F76FBC001064C7 /* CustomStringConvertible+Additions.swift in Sources */,
 				ABC75D5D23FC3B4C00C6D9B6 /* HydroProvider.swift in Sources */,
+				ABC75D6323FC63B000C6D9B6 /* Float+DataUsageFormat.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
