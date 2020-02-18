@@ -63,7 +63,7 @@ class MobileBill: Bill {
             "Number: \(self.number)",
             "Provider: \(self.provider.name)",
             "Used GB: \(self.usedGB.dataUsageFormat())",
-            "Used Min: \(self.usedMinutes)",
+            "Used Min: \(self.usedMinutes.minUsageFormat())",
             "Model: \(self.modelName)",
             "Total: \(self.total.priceFormat())",
             "***************************************"

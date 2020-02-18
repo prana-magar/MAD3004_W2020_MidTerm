@@ -13,4 +13,8 @@ extension Float{
     func dataUsageFormat() -> String{
         return "\(self) GB"
     }
+    
+    func minUsageFormat() -> String{
+        return "\(self) Minutes"
+    }
 }
