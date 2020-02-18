@@ -9,5 +9,5 @@
 import Foundation
 
 protocol Display {
-    func display();
+    func display(addTab:Bool);
 }

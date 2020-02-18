@@ -17,7 +17,19 @@ protocol Bill: Display , CustomStringConvertible{
 }
 
 extension Bill{
-    func display() {
-        print(self.description)
+    func display(addTab:Bool = false) {
+        let printstr = [
+            "*****************",
+            "ID: \(self.id)",
+            "Date: \(self.date)",
+            "Type: \(self.type)",
+            "Total: \(self.total)",
+            "*****************"
+        ]
+        
+        for str in printstr{
+            if addTab{ print("\t", terminator:"")}
+            print(str)
+        }
     }
 }

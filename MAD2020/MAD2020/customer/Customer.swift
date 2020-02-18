@@ -60,4 +60,31 @@ class Customer: Display, CustomStringConvertible {
         }
     }
     
+    func display(addTab:Bool = false) {
+        
+        let printstr = [
+            "*****************",
+            "ID: \(self.id)",
+            "First Name: \(self.firstName)",
+            "Last Name: \(self.lastName)",
+            "email: \(self.email)",
+            "Total: \(self.totalBill)",
+            "*****************"
+        ]
+        
+        for str in printstr{
+            if addTab{ print("\t", terminator:"")}
+            print(str)
+        }
+    }
+    
+    func display(addTab:Bool = false, withBill:Bool = false){
+        self.display(addTab: addTab)
+        if(withBill){
+            for(_,bill) in self.bills{
+                bill.display(addTab: true)
+            }
+        }
+    }
+    
 }
