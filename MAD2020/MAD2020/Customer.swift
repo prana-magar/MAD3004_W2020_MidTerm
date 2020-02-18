@@ -13,6 +13,7 @@ class Customer: Display, CustomStringConvertible {
     var id: String
     var firstName: String
     var lastName: String
+    lazy var bills: [String: Bill] = [String: Bill]()
     var fullName: String {
         get{
            return "\(firstName) \(lastName)"
