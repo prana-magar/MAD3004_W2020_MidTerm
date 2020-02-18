@@ -8,7 +8,7 @@
 
 import Foundation
 
-
+var customers = [Customer]()
 // All CellPhoneProviders
 var fidoPhoneProvider = CellPhoneProvider(name: "FIDO",
                              baseRate: 10,
@@ -59,14 +59,20 @@ var hydroBill1 = HydroBill(id: "justenergy_1",
                            unitConsumed: 45.3)
 
 // customer 1
-var ramCustomer = Customer(id: "C1",
-                           firstName: "Ram",
-                           lastName: "katel",
-                           email: "ram@gmail.com")
+var ramCustomer: Customer
 
-// Adding one bill at a time
-ramCustomer.addBill(bill: mobileBill1)
-ramCustomer.addBill(bill: hydroBill1)
+if let ramCustomer = Customer(id: "C1",
+                       firstName: "Ram",
+                       lastName: "katel",
+                       email: "ram@gmail.com"){
+    // Adding one bill at a time
+    ramCustomer.addBill(bill: mobileBill1)
+    ramCustomer.addBill(bill: hydroBill1)
+    customers.append(ramCustomer)
+    
+}
+
+
 
 
 
@@ -90,15 +96,20 @@ var hydroBill2:Bill = HydroBill(id: "justenergy_2",
                            agency: justEnergyHydroProvider,
                            unitConsumed: 55.3)
 
-var shyamCustomer = Customer(id: "C2",
+
+
+if let shyamCustomer =  Customer(id: "C2",
                              firstName: "Shyam",
                              lastName: "pokhrel",
                              email: "shyam@fertl.com")
+{
+    let shyamBills = [mobileBill2, internetBill2, hydroBill2]
+    // Adding all bills at once
+    shyamCustomer.addBill(bills: shyamBills)
+    customers.append(shyamCustomer)
+}
 
-var shyamBills = [mobileBill2, internetBill2, hydroBill2]
 
-// Adding all bills at once
-shyamCustomer.addBill(bills: shyamBills)
 
 
 
@@ -113,15 +124,21 @@ var mobileBill3 = MobileBill(id: "freedom_1",
                              usedMinutes: 42,
                              provider: freedomMobilePhoneProvider)
 
-var hariCustomer = Customer(id: "C3",
-                            firstName: "Hari",
-                            lastName: "ger",
-                            email: "haribari@gert.com")
-
-hariCustomer.addBill(bill: mobileBill3)
 
 
-var customers = [ramCustomer, shyamCustomer, hariCustomer]
+
+if let hariCustomer = Customer(id: "C3",
+                        firstName: "Hari",
+                        lastName: "ger",
+                        email: "haribari@gert.com")
+{
+    hariCustomer.addBill(bill: mobileBill3)
+    customers.append(hariCustomer)
+}
+
+
+
+
 
 
 func getCustomerById(id: String) -> Customer? {
@@ -134,7 +151,12 @@ func getCustomerById(id: String) -> Customer? {
     return nil
 }
 
-shyamCustomer.display(withBill: true)
+
+// Printing all Customers and their Bills
+for customer in customers{
+    customer.display(withBill: true)
+}
+
 
 
 

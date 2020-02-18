@@ -27,7 +27,24 @@ class Customer: Display, CustomStringConvertible {
     }
     
     
-    init(id: String, firstName: String, lastName: String, email: String) {
+    init?(id: String, firstName: String, lastName: String, email: String){
+        do{
+            try Validations.email(email: email)
+        }
+        catch EmailValidationError.isNotValidEmail{
+            print("Not valid email.")
+            return nil
+        }
+        catch EmailValidationError.isEmpty{
+            print("Email passed is Empty.")
+        }
+        catch EmailValidationError.isNotValidLength{
+            print("Email not valid length")
+        }
+        catch {
+            print("Unknow Error \(error)")
+        }
+        
         self.id = id
         self.firstName = firstName
         self.lastName = lastName
@@ -63,7 +80,7 @@ class Customer: Display, CustomStringConvertible {
     func display(addTab:Bool = false) {
         
         let printstr = [
-            "*****************",
+            "\n*****************",
             "ID: \(self.id)",
             "First Name: \(self.firstName)",
             "Last Name: \(self.lastName)",
