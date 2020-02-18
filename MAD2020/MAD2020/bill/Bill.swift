@@ -21,7 +21,7 @@ extension Bill{
         let printstr = [
             "***************************************",
             "ID: \(self.id)",
-            "Date: \(self.date)",
+            "Date: \(self.date.printFormat())",
             "Type: \(self.type)",
             "Total: \(self.total.priceFormat())",
             "***************************************"

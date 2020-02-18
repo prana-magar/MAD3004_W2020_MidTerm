@@ -22,6 +22,7 @@
 		ABC75D5F23FC5E3700C6D9B6 /* Float+UnitFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC75D5E23FC5E3700C6D9B6 /* Float+UnitFormat.swift */; };
 		ABC75D6123FC612300C6D9B6 /* Float+PriceFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC75D6023FC612300C6D9B6 /* Float+PriceFormat.swift */; };
 		ABC75D6323FC63B000C6D9B6 /* Float+DataUsageFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC75D6223FC63B000C6D9B6 /* Float+DataUsageFormat.swift */; };
+		ABC75D6523FC739500C6D9B6 /* Date+Format.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC75D6423FC739500C6D9B6 /* Date+Format.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -53,6 +54,7 @@
 		ABC75D5E23FC5E3700C6D9B6 /* Float+UnitFormat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Float+UnitFormat.swift"; sourceTree = "<group>"; };
 		ABC75D6023FC612300C6D9B6 /* Float+PriceFormat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Float+PriceFormat.swift"; sourceTree = "<group>"; };
 		ABC75D6223FC63B000C6D9B6 /* Float+DataUsageFormat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Float+DataUsageFormat.swift"; sourceTree = "<group>"; };
+		ABC75D6423FC739500C6D9B6 /* Date+Format.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Format.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 				ABC75D5E23FC5E3700C6D9B6 /* Float+UnitFormat.swift */,
 				ABC75D6023FC612300C6D9B6 /* Float+PriceFormat.swift */,
 				ABC75D6223FC63B000C6D9B6 /* Float+DataUsageFormat.swift */,
+				ABC75D6423FC739500C6D9B6 /* Date+Format.swift */,
 			);
 			path = extension;
 			sourceTree = "<group>";
@@ -215,6 +218,7 @@
 				ABC75D5923FB7D2100C6D9B6 /* CellPhoneProvider.swift in Sources */,
 				AB5F8C6B23F76FBC001064C7 /* CustomStringConvertible+Additions.swift in Sources */,
 				ABC75D5D23FC3B4C00C6D9B6 /* HydroProvider.swift in Sources */,
+				ABC75D6523FC739500C6D9B6 /* Date+Format.swift in Sources */,
 				ABC75D6323FC63B000C6D9B6 /* Float+DataUsageFormat.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

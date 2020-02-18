@@ -35,7 +35,7 @@ class InternetBill: Bill {
         let printstr = [
             "***************************************",
             "ID: \(self.id)",
-            "Date: \(self.date)",
+            "Date: \(self.date.printFormat())",
             "Type: \(self.type)",
             "Provider: \(self.provider.name)",
             "Used GB: \(self.usedGB.dataUsageFormat())",

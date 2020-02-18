@@ -40,7 +40,7 @@ class MobileBill: Bill {
         let printstr = [
             "***************************************",
             "ID: \(self.id)",
-            "Date: \(self.date)",
+            "Date: \(self.date.printFormat())",
             "Type: \(self.type)",
             "Number: \(self.number)",
             "Provider: \(self.provider.name)",

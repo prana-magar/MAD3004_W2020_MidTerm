@@ -33,7 +33,7 @@ class HydroBill: Bill {
         let printstr = [
             "***************************************",
             "ID: \(self.id)",
-            "Date: \(self.date)",
+            "Date: \(self.date.printFormat())",
             "Type: \(self.type)",
             "Agency: \(self.agency.name)",
             "Units: \(self.unitConsumed.unitFormat())",
