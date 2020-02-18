@@ -131,6 +131,7 @@ class Customer: Display, CustomStringConvertible {
             "ID: \(self.id)",
             "Full Name: \(self.fullName)",
             "email: \(self.email)",
+            "Phone Number: \(self.number)",
             "Total: \(self.totalBill.priceFormat())",
             "*****************"
         ]
