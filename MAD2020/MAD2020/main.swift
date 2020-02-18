@@ -177,6 +177,14 @@ print("\n\n Trying to find customer with customer id c1")
 if let cc = getCustomerById(id: "C1"){
     print("Found customer with given id:")
     cc.display()
+    
+    // Removing bill from customer
+    print("\n\n REmoving bill with id fido_1 from customer C1")
+    print("bills before removing: ")
+    cc.display(withBill: true)
+    cc.removeBill(id: "fido_1")
+    print("\n Bills after removing")
+    cc.display(withBill: true)
 }
 
 print("\n\n Trying to find customer with customer id C2")
