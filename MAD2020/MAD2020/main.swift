@@ -262,4 +262,16 @@ for customer in customers{
     customer.display()
 }
 
+// customer with no bills
+print("\n\nPrinting customer with no bills")
+if let c4 = Customer(id: "C4",
+                     firstName: "Osin",
+                     lastName: "Sitaula",
+                     email: "abc@ttaer.com",
+                     number: "984747555"){
+    c4.display(withBill: true)
+}
+
+
+
 
