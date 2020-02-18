@@ -254,6 +254,7 @@ if(illegalCustomerObject == nil){
 }
 
 // customers sorted by total bill
+print("\n\n Printing sorted customers")
 customers.sort { (c1, c2) -> Bool in
     return c1.totalBill > c2.totalBill
 }
