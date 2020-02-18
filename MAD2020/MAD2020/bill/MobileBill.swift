@@ -21,11 +21,11 @@ class MobileBill: Bill {
         }
     }
     var modelName: String
-    var number: Int
+    var number: String
     var usedGB: Float
     var usedMinutes: Float
     
-    init(id: String, date: Date, modelName: String, number: Int, usedGB: Float, usedMinutes: Float, provider: CellPhoneProvider) {
+    init(id: String, date: Date, modelName: String, number: String, usedGB: Float, usedMinutes: Float, provider: CellPhoneProvider) {
         self.id = id
         self.date = date
         self.modelName = modelName

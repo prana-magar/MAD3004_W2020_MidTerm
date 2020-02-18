@@ -47,7 +47,7 @@ var justEnergyHydroProvider = HydroProvider(name: "Just Energy",
 var mobileBill1 = MobileBill(id: "fido_1",
                              date: Date(),
                              modelName: "Samsung s9",
-                             number: 289456789,
+                             number: "289456789",
                              usedGB: 4.6,
                              usedMinutes: 35.4,
                              provider: fidoPhoneProvider)
@@ -75,7 +75,7 @@ ramCustomer.addBill(bill: hydroBill1)
 var mobileBill2:Bill = MobileBill(id: "publicMobile_1",
                              date: Date(),
                              modelName: "iphone X",
-                             number: 289445678,
+                             number: "289445678",
                              usedGB: 5.9,
                              usedMinutes: 55.3,
                              provider: publicMobilePhoneProvider)
@@ -108,7 +108,7 @@ shyamCustomer.addBill(bills: shyamBills)
 var mobileBill3 = MobileBill(id: "freedom_1",
                              date: Date(),
                              modelName: "Iphone 11",
-                             number: 456457534,
+                             number: "456457534",
                              usedGB: 3.3,
                              usedMinutes: 42,
                              provider: freedomMobilePhoneProvider)
