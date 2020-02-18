@@ -13,13 +13,13 @@ class HydroBill: Bill {
     var date: Date
     var type: BillType = BillType.Hydro
     var total: Float = 0
-    var agencyName: String
+    var agency: HydroProvider
     var unitConsumed: Float
     
-    init(id: String, date: Date, agencyName: String, unitConsumed: Float) {
+    init(id: String, date: Date, agency: HydroProvider, unitConsumed: Float) {
         self.id = id
         self.date = date
-        self.agencyName = agencyName
+        self.agency = agency
         self.unitConsumed = unitConsumed
     }
     
